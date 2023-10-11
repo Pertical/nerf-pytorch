@@ -11,6 +11,9 @@ from tqdm import tqdm, trange
 
 import matplotlib.pyplot as plt
 
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"]  =  "TRUE"
+
 from run_nerf_helpers import *
 
 from load_llff import load_llff_data
